@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reptiles</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-image: url('https://wallpapers.com/images/hd/reptile-background-h7etub46kfiywa5g.jpg');
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(1, 4fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 150px;
+            /* Adjust size as needed */
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff1235;
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 20px auto;
+            display: block;
+        }
+        .back-button:hover {
+            background-color: #080050;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Cobra</h2>
+        <div class="card">
+            <img src="https://a-z-animals.com/media/2021/10/king-cobra-the-worlds-longest-venomous-snake-with-clipping-path-picture-id1294891496-e1648589687675.jpg" alt="Cobra">
+            <ul>
+                <li>Habitat: Forests and savannas</li>
+                <li>Diet: Carnivorous</li>
+                <li>Special Feature: Hooded neck</li>
+                <li>Size: Up to 3 meters</li>
+            </ul>
+        </div>
+        <h2>Komodo Dragon</h2>
+        <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.4wxvhtlGP81eaFGLoZOcqQHaE7?rs=1&pid=ImgDetMain" alt="Komodo Dragon">
+            <ul>
+                <li>Habitat: Indonesian islands</li>
+                <li>Diet: Carnivorous</li>
+                <li>Special Feature: Largest living lizard</li>
+                <li>Size: Up to 3 meters</li>
+            </ul>
+        </div>
+        <h2>Green Iguana</h2>
+        <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.wtQOYCvMrp8RtX-JqQaWYAHaE8?rs=1&pid=ImgDetMain" alt="Green Iguana">
+            <ul>
+                <li>Habitat: Rainforests</li>
+                <li>Diet: Herbivorous</li>
+                <li>Special Feature: Long tail and large size</li>
+                <li>Size: Up to 2 meters</li>
+            </ul>
+        </div>
+        <h2>Chameleon</h2>
+        <div class="card">
+            <img src="https://www.treehugger.com/thmb/-2PC3Yqk-Wgkyprs9qxa9UYI1n0=/5184x0/filters:no_upscale():max_bytes(150000):strip_icc()/panther-chameleon-on-branch--indonesia-730143951-f26abe8c94a64dcab6581da062f4d3cc.jpg" alt="Chameleon">
+            <ul>
+                <li>Habitat: Rainforests and deserts</li>
+                <li>Diet: Insectivorous</li>
+                <li>Special Feature: Color-changing ability</li>
+                <li>Size: Up to 30 cm</li>
+            </ul>
+        </div>
+    </div>
+    <a href="index.html" class="back-button">Back to Home</a>
+</body>
+</html>

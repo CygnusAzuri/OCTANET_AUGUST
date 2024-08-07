@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquatic Animals</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://th.bing.com/th/id/OIP.f3S_GXNHMEYTPzjxqQxgswHaEK?rs=1&pid=ImgDetMain');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(1, 4fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: black;
+        }
+
+        .card img {
+            width: 150px;
+            /* Adjust size as needed */
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff1235;
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 20px auto;
+            display: block;
+        }
+        .back-button:hover {
+            background-color: #080050;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Clownfish</h2>
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/50/e2/a0/50e2a0bdde0faadf63f337e32cd68b3e.jpg" alt="Clownfish">
+            <ul>
+                <li>Habitat: Coral reefs</li>
+                <li>Diet: Omnivores</li>
+                <li>Special Feature: Mutualistic relationship with sea anemones</li>
+                                <li>Size: Up to 11 cm</li>
+            </ul>
+        </div>
+        <h2>Dolphin</h2>
+        <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.QW8lDc4vqcST32yNykWTaQHaHa?w=177&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Dolphin">
+            <ul>
+                <li>Habitat: Marine environments</li>
+                <li>Diet: Carnivorous</li>
+                <li>Special Feature: Highly intelligent and social animals</li>
+                <li>Size: 1.7 to 4 meters</li>
+            </ul>
+        </div>
+        <h2>Great White Shark</h2>
+        <div class="card">
+            <img src="https://mediadrumworld.com/wp-content/uploads/2020/04/MDRUM_GREAT_WHITE_CLOSE-UP-10-1536x1536.jpg" alt="Great White Shark">
+            <ul>
+                <li>Habitat: Coastal waters</li>
+                <li>Diet: Carnivorous</li>
+                <li>Special Feature: Apex predator with keen sense of smell</li>
+                <li>Size: Up to 6 meters</li>
+            </ul>
+        </div>
+        <h2>Jellyfish</h2>
+        <div class="card">
+            <img src="https://naldzgraphics.net/wp-content/uploads/2013/04/12-white-spots-jellyfish-photography.jpg" alt="Jellyfish">
+            <ul>
+                <li>Habitat: Found in all ocean waters</li>
+                <li>Diet: Carnivorous</li>
+                <li>Special Feature: Tentacles with stinging cells called nematocysts</li>
+                <li>Size: From a few millimeters to over 2 meters</li>
+            </ul>
+        </div>
+    </div>
+    <a href="index.html" class="back-button">Back to Home</a>
+</body>
+</html>
+

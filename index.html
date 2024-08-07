@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Landing Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            background-image: url('https://media.istockphoto.com/id/1001648938/vector/wild-animals-in-jungle-frame.jpg?s=612x612&w=0&k=20&c=8ChHfD8gG7Bpy10nvS3NZgp08O9U-36ztMhuK673OF8=');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Ensure background is fixed */
+            color: rgb(249, 3, 179);
+            text-align: center;
+        }
+
+        .container {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Add a slight dark overlay for readability */
+        }
+
+        .container.active {
+            display: flex;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns */
+            gap: 20px; /* Space between cards */
+            padding: 20px; /* Add padding around the grid */
+        }
+
+        .card {
+            background: rgba(72, 246, 139, 0.932); /* Sky blue color */
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            text-align: left; /* Align text to the left */
+            transition: transform 0.2s;
+            cursor: pointer;
+            overflow: hidden; /* Hide overflow */
+            word-wrap: break-word; /* Break long words */
+            max-width: 100%; /* Make sure card width adjusts within the grid */
+        }
+
+        .card ul {
+            padding-left: 20px; /* Indent list items */
+            margin: 0;
+            line-height: 1.6; /* Increase line height for readability */
+        }
+
+        .card li {
+            margin-bottom: 10px; /* Space between list items */
+        }
+
+        .card h2 {
+            margin: 0 0 10px 0; /* Margin for heading */
+            font-size: 1.5em; /* Adjust font size */
+        }
+
+        .aquatic-background {
+            background-image: url('https://img.freepik.com/premium-photo/depths-cavernous-whale-habitat-abyssal-reef-kingdoms_1095373-1056.jpg');
+            background-size: auto; /* Allow the background to repeat */
+            background-position: top left; /* Start the background from the top left */
+            background-repeat: repeat; /* Ensure the background image repeats */
+            padding: 20px;
+            min-height: 100vh; /* Ensure the section covers at least the full viewport height */
+            box-sizing: border-box; /* Include padding in the element's total width and height */
+        }
+
+        .back-button {
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            color: black;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            transform: scale(1.05);
+        }
+
+        .back-button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div id="home" class="container active">
+        <h1>Welcome to the Zoo</h1>
+        <div class="cards">
+            <div class="card" onclick="showSection('aquatic')">Aquatic Animals</div>
+            <div class="card" onclick="showSection('land')">Land Animals</div>
+            <div class="card" onclick="showSection('birds')">Birds</div>
+            <div class="card" onclick="showSection('reptiles')">Reptiles</div>
+        </div>
+    </div>
+
+    <div id="aquatic" class="container aquatic-background">
+        <h1>Aquatic Animals</h1>
+        <div class="details">
+            <div class="cards">
+                <div class="card" id="clownfish">
+                    <h2>Clownfish</h2>
+                    <ul>
+                        <li>Habitat: Coral reefs</li>
+                        <li>Diet: Omnivores, feeding on algae and small invertebrates</li>
+                        <li>Special Feature: Mutualistic relationship with sea anemones</li>
+                        <li>Size: Up to 11 cm</li>
+                    </ul>
+                </div>
+                <div class="card" id="dolphin">
+                    <h2>Dolphin</h2>
+                    <ul>
+                        <li>Habitat: Marine environments, from shallow coastal waters to deep ocean</li>
+                        <li>Diet: Carnivorous, primarily fish and squid</li>
+                        <li>Special Feature: Highly intelligent and social animals</li>
+                        <li>Size: 1.7 to 4 meters</li>
+                    </ul>
+                </div>
+                <div class="card" id="shark">
+                    <h2>Great White Shark</h2>
+                    <ul>
+                        <li>Habitat: Coastal waters in all major oceans</li>
+                        <li>Diet: Carnivorous, mainly fish and marine mammals</li>
+                        <li>Special Feature: Apex predator with keen sense of smell</li>
+                        <li>Size: Up to 6 meters</li>
+                    </ul>
+                </div>
+                <div class="card" id="jellyfish">
+                    <h2>Jellyfish</h2>
+                    <ul>
+                        <li>Habitat: Found in all ocean waters</li>
+                        <li>Diet: Carnivorous, feeding on plankton, crustaceans, and small fish</li>
+                        <li>Special Feature: Tentacles with stinging cells called nematocysts</li>
+                        <li>Size: From a few millimeters to over 2 meters</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="back-button" onclick="showSection('home')">Back to Home</div>
+        </div>
+    </div>
+    
+    <div id="land" class="container land-background">
+        <h1>Land Animals</h1>
+        <div class="details">
+            <div class="cards">
+                <div class="card" id="lion">
+                    <h2>Lion</h2>
+                    <ul>
+                        <li>Habitat: Grasslands and savannas</li>
+                        <li>Diet: Carnivorous, primarily large herbivores</li>
+                        <li>Special Feature: Social animals living in prides</li>
+                        <li>Size: Up to 2.6 meters in length</li>
+                    </ul>
+                </div>
+                <div class="card" id="elephant">
+                    <h2>Elephant</h2>
+                    <ul>
+                        <li>Habitat: Savannas, forests, and grasslands</li>
+                        <li>Diet: Herbivorous, feeding on plants, fruits, and bark</li>
+                        <li>Special Feature: Large ears and trunk</li>
+                        <li>Size: Up to 4 meters tall</li>
+                    </ul>
+                </div>
+                <div class="card" id="giraffe">
+                    <h2>Giraffe</h2>
+                    <ul>
+                        <li>Habitat: Savannahs and open woodlands</li>
+                        <li>Diet: Herbivorous, feeding mainly on leaves</li>
+                        <li>Special Feature: Long neck and legs</li>
+                        <li>Size: Up to 5.5 meters tall</li>
+                    </ul>
+                </div>
+                <div class="card" id="zebra">
+                    <h2>Zebra</h2>
+                    <ul>
+                        <li>Habitat: Grasslands and savannas</li>
+                        <li>Diet: Herbivorous, feeding on grass</li>
+                        <li>Special Feature: Distinctive black and white stripes</li>
+                        <li>Size: Up to 2.5 meters tall</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="back-button" onclick="showSection('home')">Back to Home</div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.container');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>

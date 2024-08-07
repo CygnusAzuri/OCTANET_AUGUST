@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mammals</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-image: url('https://th.bing.com/th/id/R.79218163e05b4ed41ef337ac0c60d44e?rik=Ly%2bSBzY%2bKI%2bFmw&riu=http%3a%2f%2fwww.wallpaperbetter.com%2fwallpaper%2f485%2f518%2f400%2fphotography-mammals-cat-simple-background-caracal-2K-wallpaper.jpg&ehk=BsU%2fWA%2b5evnyCtlbGw%2bloiLDyQsIQ8HgJiHZ6xDfKvk%3d&risl=&pid=ImgRaw&r=0');
+            color:white;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(1, 4fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color:black;
+        }
+
+        .card img {
+            width: 150px;
+            /* Adjust size as needed */
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff1235;
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 20px auto;
+            display: block;
+        }
+        .back-button:hover {
+            background-color: #080050;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Lion</h2>
+        <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.l5dPatv04S7koEU2SetbzAHaEo?rs=1&pid=ImgDetMain" alt="Lion">
+            <ul>
+                <li>Habitat: Grasslands and savannas</li>
+                <li>Diet: Carnivorous</li>
+                <li>Special Feature: Social animals living in prides</li>
+                <li>Size: Up to 2.6 meters in length</li>
+            </ul>
+        </div>
+        <h2>Elephant</h2>
+        <div class="card">
+            <img src="https://th.bing.com/th/id/R.b86134ad17ea2ac52241e2140519a074?rik=yyLNak4Hwdydcw&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2017%2f03%2f28%2f422699-animals-mammals-elephant.jpg&ehk=bz9sDRInonTY1g8Ld7GsqcDrEl7rl2F%2bQDiF73eAegg%3d&risl=&pid=ImgRaw&r=0" alt="Elephant">
+            <ul>
+                <li>Habitat: Savannas, forests, and grasslands</li>
+                <li>Diet: Herbivorous</li>
+                <li>Special Feature: Large ears and trunk</li>
+                <li>Size: Up to 4 meters tall</li>
+            </ul>
+        </div>
+        <h2>Giraffe</h2>
+        <div class="card">
+            <img src="https://th.bing.com/th/id/R.9cbf7cc98ab8bc1d13b6d99d2e40aeac?rik=ZTxHUDyrmn7jxA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-k7VPn3cftcw%2fTs8l9nqlc3I%2fAAAAAAAADfc%2fisnbR83Cht4%2fs1600%2fgiraffe.jpg&ehk=gqsziDUp6Ax%2fJdgaE%2bXMvVToWHwXQDcKGukRiPFNJhQ%3d&risl=&pid=ImgRaw&r=0" alt="Giraffe">
+            <ul>
+                <li>Habitat: Savannahs and open woodlands</li>
+                <li>Diet: Herbivorous</li>
+                <li>Special Feature: Long neck and legs</li>
+                <li>Size: Up to 5.5 meters tall</li>
+            </ul>
+        </div>
+        <h2>Zebra</h2>
+        <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.wXZfyKDzrr363GrGrMqaHwHaEK?w=296&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Zebra">
+            <ul>
+                <li>Habitat: Grasslands and savannas</li>
+                <li>Diet: Herbivorous</li>
+                <li>Special Feature: Distinctive black and white stripes</li>
+                <li>Size: Up to 2.5 meters tall</li>
+            </ul>
+        </div>
+    </div>
+    <a href="index.html" class="back-button">Back to Home</a>
+</body>
+</html>
